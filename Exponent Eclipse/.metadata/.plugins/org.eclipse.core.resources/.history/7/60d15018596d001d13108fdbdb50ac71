@@ -1,0 +1,53 @@
+package com.practiesQuestion;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Array {
+
+	//1. How do you convert an ArrayList to Array
+
+	public static void main(String[] args) {
+		
+
+		System.out.println("1. How do you convert an ArrayList to Array");
+
+		List<Integer> array = new ArrayList<Integer>();
+
+		array.add(11);
+		array.add(22);
+		array.add(33);
+		array.add(44);
+		array.add(55);
+		array.add(66);
+		array.add(77);
+
+		Object[] obj = array.toArray();// to array method
+
+		for (Object ob : obj) {// for each loop
+
+			System.out.println("Array list:  " + ob + "   ");
+
+		}
+
+		System.out.println("---------------------------------");
+
+		List<Integer> array2 = new ArrayList<Integer>();
+
+		array2.add(10);
+		array2.add(20);
+		array2.add(30);
+		array2.add(40);
+		array2.add(50);
+
+		Integer[] arr = new Integer[array2.size()];
+
+		arr = array2.toArray(arr);
+		for (Integer a : arr) {
+
+			System.out.println(a);
+
+		}
+	}
+
+}

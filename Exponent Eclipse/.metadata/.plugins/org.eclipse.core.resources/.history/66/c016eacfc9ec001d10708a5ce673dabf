@@ -1,0 +1,10 @@
+package com;
+
+public class Mythread extends Thread {
+
+	public void run() {
+
+		System.out.println("Run Method Started Successfully");
+	}
+
+}

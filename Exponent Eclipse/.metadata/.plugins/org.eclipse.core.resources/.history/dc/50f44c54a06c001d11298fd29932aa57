@@ -1,0 +1,33 @@
+package com.Arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Country {
+	
+	public void addaCountry() {
+		
+		List<String> maharashtra = new ArrayList<String>();
+		
+		maharashtra.add("mumbai");
+		maharashtra.add("pune");
+		maharashtra.add("Nashik");
+		maharashtra.add("A.nager");
+		
+		
+		List<String> gujrat = new ArrayList<String>();
+		
+		gujrat.add("Surat");
+		gujrat.add("vapi");
+		gujrat.add("Ghandinager");
+		gujrat.add("Ahamdabad");
+		
+			List<List<String>> india = new ArrayList<List<String>>();
+			
+			india.add(maharashtra);
+			india.add(gujrat);
+		
+		
+	}
+
+}

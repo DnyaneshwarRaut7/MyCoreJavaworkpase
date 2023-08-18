@@ -1,0 +1,42 @@
+package com.custamexception;
+
+import java.util.Scanner;
+
+public class Mainclass {
+		
+		
+		public static void  valiedpin() throws Atmpincheck 
+		{
+			Scanner sc = new Scanner (System.in);
+			
+			System.out.println(" Enter  your Atm Pin :- ");
+			String pin  = sc.next();
+			
+			
+			if(pin.equals("1234")){ //&&no.endsWith("4")&&!no.isEmpty())
+					
+				
+				System.out.println("Entered No is Correct Transection Successfully");
+			}else {
+				
+				throw new Atmpincheck("Your Pin is invalid Please Enter Valid Pin");
+			
+			}
+			sc.close();
+			
+			
+		}
+		
+		public static void main(String[] args) {
+			
+			try {
+				//Mainclass.
+				valiedpin();s
+			} catch (Atmpincheck e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+

@@ -1,0 +1,139 @@
+package com.HashmapExample;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class World {
+
+	public Map<String, Map<String, List<String>>> addWorldDetails() {
+
+		List<String> maharashtra = new ArrayList<String>();
+
+		maharashtra.add("mumbai");
+		maharashtra.add("pune");
+		maharashtra.add("Nashik");
+		maharashtra.add("A.nager");
+
+		List<String> gujrat = new ArrayList<String>();
+
+		gujrat.add("Surat");
+		gujrat.add("vapi");
+		gujrat.add("Ghandinager");
+		gujrat.add("Ahamdabad");
+
+		Map<String, List<String>> india = new HashMap<String, List<String>>();
+
+		india.put("MAHARASHTRA", maharashtra);
+		india.put("GUJRAT", gujrat);
+
+		List<String> colombo = new ArrayList<String>();
+
+		colombo.add("Thimbirigasya ya");
+		colombo.add("Dehieala");
+		colombo.add("Moratuwa");
+		colombo.add("city 1");
+
+		List<String> gallo = new ArrayList<String>();
+
+		gallo.add("SNew York");
+		gallo.add("Chicago");
+		gallo.add("Lose Angelese");
+		gallo.add("San Diego");
+
+		Map<String, List<String>> shrilanka = new HashMap<String, List<String>>();
+
+		shrilanka.put("COLOMBO", colombo);
+		shrilanka.put("GALLO", gallo);
+
+		Map<String, Map<String, List<String>>> World = new HashMap<String, Map<String, List<String>>>();
+
+		World.put("INDIA", india);
+		World.put("SHRILANK", shrilanka);
+
+		return World;
+	}
+
+	public static void main(String[] args) {
+
+		World world = new World();
+
+		Map<String, Map<String, List<String>>> country = world.addWorldDetails();
+
+		Set<String> key = country.keySet();
+		
+		System.out.println(key);
+
+		System.out.println("--------- using iterato interface -----------");
+
+		Iterator<String> itr = key.iterator();
+
+		while (itr.hasNext()) {
+
+			String countrylist = itr.next();
+
+			System.out.println(countrylist);
+
+			Map<String, List<String>> statelist = country.get(countrylist);
+
+			//.out.println(statelist);
+
+			// statelist.itreater();
+			Set<String> key2 = statelist.keySet();
+
+			Iterator<String> itr2 = key2.iterator();
+
+			while (itr2.hasNext()) {
+
+				String state = itr2.next();
+
+				//System.out.println(state);
+
+				List<String> cities = statelist.get(state);
+				//System.out.println(cities);
+
+				Iterator<String> itr3 = cities.iterator();
+
+				while (itr3.hasNext()) {
+
+					String statelist1 = itr3.next();
+
+					System.out.println(statelist1);
+
+				}
+				
+				System.out.println("=========================");
+
+			}
+
+			System.out.println("=======================");
+
+		}
+		System.out.println("========== using for loop ===============");
+
+for (String cl : key) {
+	
+	System.out.println(cl);
+	
+
+	Map<String, List<String>> state =country.get(cl);
+	
+	Set<String>keys1 = state.keySet();
+	
+	for (String c2 : keys1) {
+		
+		System.out.println(c2);
+		
+		
+		
+	}
+	
+}
+		
+	}
+
+}

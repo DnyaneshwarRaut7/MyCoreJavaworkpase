@@ -1,0 +1,64 @@
+package com.Arraylist;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class Country {
+
+	public List<List<String>> addaCountry() {
+
+		List<String> maharashtra = new ArrayList<String>();
+
+		maharashtra.add("mumbai");
+		maharashtra.add("pune");
+		maharashtra.add("Nashik");
+		maharashtra.add("A.nager");
+
+		List<String> gujrat = new ArrayList<String>();
+
+		gujrat.add("Surat");
+		gujrat.add("vapi");
+		gujrat.add("Ghandinager");
+		gujrat.add("Ahamdabad");
+
+		List<List<String>> india = new ArrayList<List<String>>();
+
+		india.add(maharashtra);
+		india.add(gujrat);
+
+		return india;
+	}
+
+	public static void main(String[] args) {
+
+		Country country = new Country();
+		List<List<String>> india = country.addaCountry();
+
+		Iterator<List<String>> itr = india.iterator();
+		while (itr.hasNext()) {
+
+			List<String> state1 = itr.next();
+			System.out.println(state1);
+		}
+		Iterator<List<String>> itr1 = india.iterator();
+
+		while (itr.hasNext()) {
+
+			List<String> state2 = itr.next();
+			System.out.println(state2);
+
+		}
+		System.out.println("------ for each loop -------");
+
+		for (List<String> state1 : india) {
+			for (List<String> state2 : india) {
+				System.out.println(state2);
+
+			}
+
+		}
+
+	}
+
+}

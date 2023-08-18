@@ -1,0 +1,13 @@
+package com;
+
+public class MainThread {
+
+	public static void main(String[] args) {
+
+		Mythread mythread = new Mythread();
+
+		mythread.start();
+
+	}
+
+}

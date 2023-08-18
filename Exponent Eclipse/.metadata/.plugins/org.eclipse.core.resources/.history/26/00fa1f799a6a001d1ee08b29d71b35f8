@@ -1,0 +1,21 @@
+package com.multipalcatchblock;
+
+public class Multiplecatchblock {
+
+	public static void main(String[] args) {
+
+		System.out.println("=== main methd===");
+
+		try {
+
+			String s = args[1];
+			System.out.println("valu of s:" + s);
+
+		} catch (ArrayIndexOutOfBoundsException e) {
+
+			System.out.println("Array Index out of bonds Exception");
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.multipalcatchblock;
+
+public class MultipleCatchBlockExample {
+
+	public static void main(String[] args) {
+		
+		System.out.println("=== main methd===");
+		
+	   try {
+				Integer i = new Integer("mauli");
+				System.out.println("valu of i"+ i);
+				
+			} catch (Exception e) {
+				System.err.println("catch block");
+				e.printStackTrace();
+			}
+		
+	}
+
+	}
+
+

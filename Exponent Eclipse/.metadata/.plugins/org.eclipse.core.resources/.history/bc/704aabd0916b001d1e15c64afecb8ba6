@@ -1,0 +1,21 @@
+package com.custamexception;
+
+import java.io.IOException;
+
+public class B extends A {
+	
+	
+	B() throws IOException
+	{
+		
+		
+		
+	}
+	
+	@Override
+	public void m1() throws IOException {
+		
+		System.out.println(" child class overide m1 method");
+	}
+
+}

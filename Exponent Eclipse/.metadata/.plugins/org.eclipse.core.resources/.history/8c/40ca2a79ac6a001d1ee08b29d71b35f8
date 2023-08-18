@@ -1,0 +1,31 @@
+package com.multipalcatchblock;
+
+public class MultipleCatchBlockExample {
+
+	public static void main(String[] args) {
+		
+		System.out.println("=== main methd===");
+		
+	   try {
+		   
+		   float[] f = new float[1];
+		   System.out.println(" valu of float :"+f);
+		   
+				Integer i = new Integer("mauli");
+				System.out.println("valu of i"+ i);
+				
+			} catch (NumberFormatException e) {
+				System.err.println("catch block");
+				e.printStackTrace();
+			}
+	   catch (Exception e) {
+		// TODO: handle exception
+		   System.out.println("----Float exception---");
+		   e.printStackTrace();
+	}
+		
+	}
+
+	}
+
+

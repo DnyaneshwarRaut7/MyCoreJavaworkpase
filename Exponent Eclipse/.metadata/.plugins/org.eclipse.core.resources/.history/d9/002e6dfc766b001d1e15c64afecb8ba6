@@ -1,0 +1,38 @@
+package com.throwthrowsKeyword;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class ThrowsKeyword {
+	
+	public static void findFile()throws
+	                       FileNotFoundException,IOException,ArithmeticException,
+	                       ArrayIndexOutOfBoundsException,NumberFormatException{
+		
+		File file = new File ("output.txt");
+		FileInputStream fin = new FileInputStream(file);
+		
+		System.out.println(fin.available());
+		System.out.println(fin.read());
+	}
+
+	public static void main(String[] args) {
+		
+		System.out.println("==== main method start ===");
+		try {
+			
+			findFile();
+			
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			
+		}
+		System.out.println(" main method close ");
+	}
+	
+
+}

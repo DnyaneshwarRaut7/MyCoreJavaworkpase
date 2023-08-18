@@ -1,0 +1,19 @@
+package com.custamexception;
+
+public class A {
+	
+	
+	A() throws IOExption
+	{
+		
+		
+	}
+	public void m1() throws IOExption{
+		
+		System.out.println("==== parent class m1 method");
+		
+	}
+	
+	
+
+}

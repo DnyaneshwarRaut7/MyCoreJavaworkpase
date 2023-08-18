@@ -1,0 +1,12 @@
+package com;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		System.out.println("Main Method Started");
+
+		System.out.println("Name :-" + Thread.currentThread().getId());
+	}
+
+}

@@ -1,0 +1,29 @@
+package com.practiesQuestion;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Array {
+
+	public static void main(String[] args) {
+
+		List<Integer> array = new ArrayList<Integer>();
+
+		array.add(11);
+		array.add(22);
+		array.add(33);
+		array.add(44);
+		array.add(55);
+		array.add(66);
+		array.add(77);
+
+		Object[] obj = array.toArray();// to array method
+
+		for (Object ob : obj) {// for each loop
+
+			System.out.println("Array list:  " + ob + "   ");
+
+		}
+	}
+
+}

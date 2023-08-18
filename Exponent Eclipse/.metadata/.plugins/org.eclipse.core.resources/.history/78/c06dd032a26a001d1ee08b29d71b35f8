@@ -1,0 +1,25 @@
+package com.trycachwithpipeperator;
+
+public class TryWithPipeOperator {
+
+	public static void main(String[] args) {
+
+		System.out.println("=== main methd===");
+
+		try {
+			String s = args[1]; // 20
+			System.out.println("valu of s:" + s);
+
+			int i = Integer.parseInt(s); // ab
+			System.out.println("valu of i:" + i);
+
+			int c = 10 / i; // 0
+			System.out.println("valu of c :" + c);
+
+		} catch (ArrayIndexOutOfBoundsException | NumberFormatException | ArithmeticException e) {
+
+			e.printStackTrace();
+		}
+	}
+
+}

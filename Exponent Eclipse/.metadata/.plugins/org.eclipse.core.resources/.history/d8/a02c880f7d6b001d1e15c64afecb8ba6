@@ -1,0 +1,10 @@
+package com.custamexception;
+
+public class Atmpincheck  extends Exception {
+	
+	public Atmpincheck(String error_message) {
+		
+		super(error_message);
+	}
+
+}

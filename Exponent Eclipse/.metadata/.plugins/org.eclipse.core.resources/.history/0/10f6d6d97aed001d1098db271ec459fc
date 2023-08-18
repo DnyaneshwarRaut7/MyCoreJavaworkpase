@@ -1,0 +1,25 @@
+package runnable;
+
+public class Mytread2 implements Runnable {
+
+	// Implement method are runnable interface
+	@Override
+	public void run() {
+
+		System.out.println("myThread 2 Started");
+		System.out.println("MyThred 2 Name :-" + Thread.currentThread().getName());
+
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Main Thread Started");
+		System.out.println("Main Thread Name:-" + Thread.currentThread().getName());
+
+		Mytread2 m2 = new Mytread2();
+		Thread thread = new Thread(m2);
+
+		thread.start();
+		m2.run();
+	}
+
+}

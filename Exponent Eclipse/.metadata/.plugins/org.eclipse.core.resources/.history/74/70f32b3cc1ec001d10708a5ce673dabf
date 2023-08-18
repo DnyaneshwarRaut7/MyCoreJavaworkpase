@@ -1,0 +1,13 @@
+package com;
+
+public class MulitithireatingDemo {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Single Thread Application Srtrted Successfully .... ");
+
+
+		System.out.println("name :"+Thread.currentThread().getName());
+	}
+
+}

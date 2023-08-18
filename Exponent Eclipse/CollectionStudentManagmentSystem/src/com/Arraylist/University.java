@@ -1,0 +1,31 @@
+package com.Arraylist;
+
+import java.util.Iterator;
+import java.util.List;
+
+public class University {
+
+	public static void main(String[] args) {
+		
+		Collage clg = new Collage();
+		
+		List<Student> university = clg.addstudentdetail();
+		
+		Iterator<Student> itr = university.iterator();
+		
+		while(itr.hasNext()) {
+			
+			Student collage= itr.next();
+			
+			System.out.println(collage.id+" "+collage.name+" "+collage.address+" "+collage.mno);
+		}
+		System.out.println("--------- for each loop----------------");
+		
+		for (Student student : university) {
+			
+			System.out.println(student.id+" "+student.name+" "+student.address+" "+student.mno);
+			
+		}
+	}
+
+}

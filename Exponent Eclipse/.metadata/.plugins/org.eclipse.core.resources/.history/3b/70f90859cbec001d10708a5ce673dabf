@@ -1,0 +1,16 @@
+package com;
+
+public class MainThread {
+
+	public static void main(String[] args) {
+   
+		System.out.println("Main Thread Started");
+		Mythread mythread = new Mythread();
+
+		mythread.start();
+		
+		System.out.println("Main Thread Compliteated");
+
+	}
+
+}

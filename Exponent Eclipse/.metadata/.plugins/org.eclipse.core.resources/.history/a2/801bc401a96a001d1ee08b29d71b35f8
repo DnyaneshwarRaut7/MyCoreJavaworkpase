@@ -1,0 +1,18 @@
+package com.multipalcatchblock;
+
+public class MultipleCatchBlockExample {
+
+	public static void main(String[] args) {
+		
+		System.out.println("=== main methd===");
+		
+		try {
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+}

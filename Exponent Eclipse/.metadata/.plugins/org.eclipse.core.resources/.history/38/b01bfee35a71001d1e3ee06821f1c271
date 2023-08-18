@@ -1,0 +1,21 @@
+package com.CollectionClassExample;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class CollectionClassExample {
+
+	public static void main(String[] args) {
+		
+		List<String> nameList =  new  ArrayList<String>();
+		
+		
+		Collections.addAll(nameList,"mauli","suraj","rushi","ritesh");
+		
+		System.out.println(nameList);
+
+	
+	}
+
+}

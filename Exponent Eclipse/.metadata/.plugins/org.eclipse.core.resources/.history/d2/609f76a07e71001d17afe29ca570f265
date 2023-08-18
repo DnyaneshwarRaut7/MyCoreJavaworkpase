@@ -1,0 +1,23 @@
+package com.comparableandComparter;
+
+public class Employee1 {
+
+	int eid;
+	String ename;
+	String eaddress;
+
+	public Employee1(int eid, String ename, String eaddress) {
+		
+		this.eid = eid;
+		this.ename = ename;
+		this.eaddress = eaddress;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee1 [eid=" + eid + ", ename=" + ename + ", eaddress=" + eaddress + "]";
+	}
+	
+	
+
+}

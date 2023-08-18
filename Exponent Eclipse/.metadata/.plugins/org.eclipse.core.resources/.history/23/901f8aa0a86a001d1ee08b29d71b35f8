@@ -1,0 +1,7 @@
+package com.multipalcatchblock;
+
+public class MultipleCatchBlockExample {
+
+	public static void main(String[] args) {}
+
+}

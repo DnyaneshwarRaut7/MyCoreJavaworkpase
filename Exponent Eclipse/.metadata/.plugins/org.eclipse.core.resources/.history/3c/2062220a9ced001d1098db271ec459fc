@@ -1,0 +1,14 @@
+package com;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		System.out.println("Main Method Started");
+
+		System.out.println("Thread Name :-" + Thread.currentThread().getId());
+
+		System.out.println("Main Method Complited");
+	}
+
+}

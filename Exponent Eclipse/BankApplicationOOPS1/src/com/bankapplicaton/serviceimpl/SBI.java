@@ -1,0 +1,166 @@
+package com.bankapplicaton.serviceimpl;
+
+import java.util.Scanner;
+
+import com.bankapplication.model.Account;
+import com.bankapplication.service.RBI;
+
+public class SBI implements RBI {
+
+	Scanner sc = new Scanner(System.in);
+	Account ac = new Account();
+
+	@Override
+	public void registerAccount() {
+		System.out.println("Enter your Acc No:-");
+		int accno = sc.nextInt();
+		ac.setAccno(accno);
+		System.out.println("Enter your name:-");
+		String accname = sc.next();
+		ac.setAccname(accname);
+		System.out.println("Enter your Adhar No:-");
+		long adharno = sc.nextLong();
+		ac.setAdharno(adharno);
+		System.out.println("Enter your Mobail No:-");
+		long mobailno = sc.nextLong();
+		ac.setMobailno(mobailno);
+		System.out.println("Enter your Panno:-");
+		String panno = sc.next();
+		ac.setPanno(panno);
+		System.out.println("Enter your Accbalance :-");
+		float accbalance = sc.nextFloat();
+		ac.setAccbalance(accbalance);
+	}
+
+	@Override
+	public void showAccountDetails() {
+
+		System.out.println("Enter your Acc No:-");
+		int accno = sc.nextInt();
+		if (ac.getAccno() == accno) {
+
+			System.out.println("your account no " + " " + ac.getAccno());
+			System.out.println("Your account name " + " " + ac.getAccname());
+			System.out.println("Your account Adthar no " + " " + ac.getAdharno());
+			System.out.println("Your account Mobail no " + " " + ac.getMobailno());
+			System.out.println("Your account Pan no " + " " + ac.getPanno());
+			System.out.println("Your account Balance " + " " + ac.getAccbalance());
+
+		}
+
+	}
+
+	@Override
+	public void showAccountBalance() {
+		System.out.println("Enter your Acc No :-");
+		int accno = sc.nextInt();
+
+		if (ac.getAccno() == accno) {
+			System.out.println("Your account Balance " + " " + ac.getAccbalance());
+
+		}
+
+	}
+
+	@Override
+	public void depositAmount() {
+
+		System.out.println("Enter your Acc No:-");
+		int accno = sc.nextInt();
+		if (ac.getAccno() == accno) {
+
+			System.out.println("Enter your Deposit Amount");
+
+			float deposit = sc.nextFloat();
+
+			float total = ac.getAccbalance() + deposit;
+			 ac.setAccbalance(total);
+			System.out.println("Avaliable total balance" + total);
+
+		}
+	}
+
+	@Override
+	public void withdrawAmount() {
+		System.out.println("Enter your Acc No:-");
+		int accno = sc.nextInt();
+		if (ac.getAccno() == accno) {
+
+			System.out.println("Enter your Widhro Amount");
+
+			float withrow = sc.nextFloat();
+			if (accno <= ac.getAccbalance()) {
+			float total1 = ac.getAccbalance() - withrow;
+
+			ac.setAccbalance(total1);
+
+			System.out.println("Avaliable total balance" + total1);
+
+		} else {
+			System.out.println("mony is not avalable.....");
+		}
+
+	}
+	}
+
+	@Override
+	public void updateAccountInfo() {
+		
+		System.out.println("Update Account Information :");
+		{
+			
+			boolean flag = true;
+			while (flag) {
+				System.out.println("**************************************");
+				System.out.println(" 1 :-Enter your update account Name:");
+				System.out.println(" 2 :-Enter your update Adathar number:");
+				System.out.println(" 3 :-Enter your update pancard number:");
+				System.out.println(" 4 :-Enter your update Mobail  number:");
+				System.out.println(" 5 :-exit");
+				System.out.println("***************************************");
+
+				System.out.println("Enter your choice:-");
+
+				int choice = sc.nextInt();
+
+				switch (choice) {
+
+				case 1:
+
+					System.out.println("Enter your update account Name:");
+					String accountname = sc.next();
+				ac.setAccname(accountname);
+					break;
+					
+				case 2:
+					System.out.println("Enter your update Adathar Number:");
+					long adtharno = sc.nextLong();
+					ac.setAdharno(adtharno);
+					break;
+					
+				case 3:
+					System.out.println("Enter your update PanCard Number:");
+					String panno = sc.next();
+					ac.setPanno(panno);
+					break;
+					
+				case 4:
+					System.out.println("Enter your update Mobal Number:");
+				long mobno = sc.nextLong();
+				ac.setMobailno(mobno);
+				case 5:
+					flag = false;
+					break;
+					default:
+					
+						System.out.println("wrong choice......");
+						
+						sc.close();
+						
+				}
+			}
+		}
+		System.out.println(" <<<<<<<<<<< your  Account informention Update Sucess >>>>>>>>>>>");
+
+	}
+}

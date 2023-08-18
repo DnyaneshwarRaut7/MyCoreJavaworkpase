@@ -1,0 +1,23 @@
+package com.list;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		List<String> al2 = new ArrayList<String>();
+		
+		al2.add("mauli");
+		al2.add("sumit");
+		al2.add("tushar");
+		al2.add("sandi");
+		al2.add("suraj");
+		
+		System.out.println(al2);
+		
+		System.out.println(al2.size());
+	}
+
+}

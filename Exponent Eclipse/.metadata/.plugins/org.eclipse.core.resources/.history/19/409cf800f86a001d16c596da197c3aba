@@ -1,0 +1,15 @@
+package com.exceptionhandling;
+
+public class Example1 {
+
+	public static void main(String[] args) {
+		
+		System.out.println(" this statement will be executed");
+		
+		Integer i = new Integer(1);
+		System.out.println("valu of i"+ i);
+		System.out.println("this statement will be not execuared");
+	}
+
+}
+// exceptional example String example

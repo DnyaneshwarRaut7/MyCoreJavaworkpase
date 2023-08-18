@@ -1,0 +1,67 @@
+package com.Arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class World {
+	
+	public List<List<List<String>>> addCountries() {
+	
+		
+
+		
+
+			List<String> maharashtra = new ArrayList<String>();
+
+			maharashtra.add("mumbai");
+			maharashtra.add("pune");
+			maharashtra.add("Nashik");
+			maharashtra.add("A.nager");
+
+			List<String> gujrat = new ArrayList<String>();
+
+			gujrat.add("Surat");
+			gujrat.add("vapi");
+			gujrat.add("Ghandinager");
+			gujrat.add("Ahamdabad");
+
+			List<List<String>> india = new ArrayList<List<String>>();
+
+			india.add(maharashtra);
+			india.add(gujrat);
+
+			
+			
+			List<String> Shrilanka = new ArrayList<String>();
+
+			Shrilanka.add("colombo");
+			Shrilanka.add("gallo");
+			Shrilanka.add("kandy");
+			Shrilanka.add("Anuradhapura");
+
+			List<String> Amerika = new ArrayList<String>();
+
+			gujrat.add("SNew York");
+			gujrat.add("Chicago");
+			gujrat.add("Lose Angelese");
+			gujrat.add("San Diego");
+			
+			List<List<String>> USA = new ArrayList<List<String>>();
+
+			USA.add(Shrilanka);
+			USA.add(Amerika);
+
+
+			 List<List<List<String>>> World = new ArrayList<List<List<String>>>();
+
+			World.add(india);
+			World.add(USA);
+				
+			return World;
+	}
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

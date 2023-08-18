@@ -1,0 +1,44 @@
+  package com.multipalcatchblock;
+
+public class Multiplecatchblock {
+
+	public static void main(String[] args) {
+
+		System.out.println("=== main methd===");
+
+		try {
+
+			String s = args[1]; // 20
+			System.out.println("valu of s:" + s);
+
+			int i = Integer.parseInt(s); // ab
+			System.out.println("valu of i:" + i);
+
+			int c = 10 / i;     // 0
+			System.out.println("valu of c :" + c);
+
+		} catch (ArrayIndexOutOfBoundsException e) {
+
+			System.out.println("Array Index out of bonds Exception");
+			e.printStackTrace();
+		} catch (NumberFormatException e) {
+
+			System.out.println("number format Exception");
+			e.printStackTrace();
+
+		} catch (ArithmeticException e) {
+
+			System.out.println("Arithmatic Exception");
+			e.printStackTrace();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+		System.out.println("main method close");
+	}
+
+}
+// 1 try block with multiple catch blocks
+// jdk 1.6
+//catch block sequence 1 sub class 2 same level 3 pareant class

@@ -1,0 +1,38 @@
+package com.comparableandComparter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.set.Employee;
+
+public class LogicComperter {
+
+	public static void main(String[] args) {
+		
+		
+		Employee e = new Employee(11,"mauli","rajuri");
+		Employee e1 = new Employee(67,"suraj","jamhed");	
+		Employee e2 = new Employee(10,"rushi","pcmc");
+		Employee e3 = new Employee(99,"ritesh","vashi");		
+		Employee e4 = new Employee(66,"tushar","tel");
+		
+		List<Employee>employeelist = new ArrayList<Employee>();
+		
+		employeelist.add(e);
+		employeelist.add(e1);
+		employeelist.add(e2);
+		employeelist.add(e3); 
+		employeelist.add(e4);
+		
+		System.out.println("------- before sorting --------");
+		
+		for (Employee emp : employeelist) {
+			
+			
+			System.out.println(emp);
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package com;
+
+public class MainThread {
+
+	public static void main(String[] args) {
+
+		System.out.println("Main Thread Started");
+		Mythread mythread = new Mythread();
+
+		 //mythread.start();
+		mythread.run();
+
+		System.out.println("Name :-" + Thread.currentThread().getName());
+		System.out.println("Main Thread Compliteated");
+
+	}
+
+}

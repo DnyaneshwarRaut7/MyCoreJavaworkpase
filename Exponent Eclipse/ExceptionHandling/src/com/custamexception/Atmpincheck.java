@@ -1,0 +1,14 @@
+package com.custamexception;
+
+public class Atmpincheck  extends Exception {
+	
+	public Atmpincheck(String error_message) {
+		
+		super(error_message);
+	}
+
+}
+// Custom class exception
+// 
+// Atmpincheck class ko  Exception ko extend  karna padtay
+// Parameterize  ko super karna padtay

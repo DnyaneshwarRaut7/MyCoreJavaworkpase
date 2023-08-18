@@ -1,0 +1,18 @@
+package com.Arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AllUniversity {
+	
+	public void addUniversity() {
+		
+		
+		List<String> shavajiuniversity = new ArrayList<String>();
+		
+		shavajiuniversity.add("Enginearing");
+		shavajiuniversity.add("Famacy");
+		shavajiuniversity.add("Ariciteacture");
+	}
+
+}

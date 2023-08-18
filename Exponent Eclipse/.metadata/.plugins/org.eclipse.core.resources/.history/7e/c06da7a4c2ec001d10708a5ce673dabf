@@ -1,0 +1,20 @@
+package com;
+
+public class MulitithireatingDemo {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Single Thread Application Srtrted Successfully .... ");
+
+        // Thread is a class preset in a java .lang package
+		// currentThread method is refers a current thread method
+	//	getname method is thread Class immditeaty refear current classs method
+		
+		System.out.println("name :"+Thread.currentThread().getName());
+	
+	System.out.println("Priority :"+Thread.currentThread().getPriority());
+	
+	}
+	
+
+}
